@@ -3,7 +3,6 @@ package hu.soter;
 import hu.soter.idomok.FaIdom;
 import hu.soter.idomok.Gomb;
 import hu.soter.idomok.Hasab;
-
 import java.util.ArrayList;
 
 
@@ -23,7 +22,7 @@ public class FaIdomokProgram {
         lista.add(hasab);
     }
 
-    public ArrayList<String> getLista() {
+    public ArrayList<FaIdom> getLista() {
         return new ArrayList<>(lista);
     }
 
