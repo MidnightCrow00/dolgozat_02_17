@@ -21,10 +21,10 @@ class ProgramTest {
 
         program = new FaIdomokProgram();
         program.ujIdom(new Gomb(1));
-        /*program.ujIdom(new Hasab(1,1,1));*/
+        program.ujIdom(new Hasab(1,1,1));
     }
 
-    @Test
+   @Test
     void testLista(){
         ArrayList<FaIdom> lista = program.getLista();
         Assertions.assertEquals(2, lista.size());

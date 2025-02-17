@@ -5,23 +5,26 @@ import hu.soter.idomok.Gomb;
 import hu.soter.idomok.Hasab;
 
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class FaIdomokProgram {
-    private List<FaIdom> lista;
+    private ArrayList<FaIdom> lista;
+
 
     public FaIdomokProgram() {
-        lista = new ArrayList<>();
-        lista.add(new Gomb(1));
-        lista.add(new Hasab(1,1,1));
+        this.lista = new ArrayList<>();
     }
 
     public void ujIdom(Gomb gomb) {
+        lista.add(gomb);
 
     }
+    public void ujIdom(Hasab hasab) {
+        lista.add(hasab);
+    }
 
-    public ArrayList<String> getLista(FaIdom faIdom) {
-        return new ArrayList<>();
+    public ArrayList<String> getLista() {
+        return new ArrayList<>(lista);
     }
 
     public double osszSuly(){
