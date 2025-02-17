@@ -36,26 +36,29 @@ public class FaIdomokProgram {
 
     public double gombokOsszSuly() {
         double ossz=0;
-        for (FaIdom idom:lista){
-            ossz += idom.suly();
+        for (FaIdom gomb:lista){
+            ossz += gomb.suly();
         }
         return ossz;
     }
 
     public FaIdom minV() {
-        int m=0;
+        int m=1;
         for (int i = 1;i<lista.size();i++){
 
         }
         return new FaIdom() {
             @Override
             public double terfogat() {
-                return 0;
+                return m;
             }
         };
     }
 
     public FaIdom maxV() {
+        for (int i = 1;i<lista.size();i++){
+            i++;
+        }
         return new FaIdom() {
             @Override
             public double terfogat() {
